@@ -21,7 +21,7 @@ public class XibComponent: UIView {
         initSubviews()
     }
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         initSubviews()
     }
@@ -29,7 +29,7 @@ public class XibComponent: UIView {
     func initSubviews() {
         
         
-        guard let bundle = Bundle(for: type(of: self)) else {return}
+        let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: XibComponent.identifier, bundle: bundle)
 
         guard let view = nib.instantiate(withOwner: self, options: nil).first as?
