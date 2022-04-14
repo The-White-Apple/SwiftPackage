@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 
 
-class XibComponent: UIView {
+public class XibComponent: UIView {
     static let identifier = "XibComponent"
 
     @IBOutlet var mainView: UIView!

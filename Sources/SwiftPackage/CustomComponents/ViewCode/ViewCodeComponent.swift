@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewCodeComponent : UIView{
+public class ViewCodeComponent : UIView{
     let titleLabel: UILabel = {
         let component = UILabel()
         component.text = "Titulo"
