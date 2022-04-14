@@ -60,7 +60,7 @@ public class ViewCodeComponent : UIView{
         ])
     }
     
-    func configureComponentData(image : UIImage, text : String){
+    public func configureComponentData(image : UIImage, text : String){
            titleLabel.text = text
            imageView.image = image
     }
