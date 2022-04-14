@@ -42,7 +42,7 @@ public class XibComponent: UIView {
 
     }
     
-    func configureImageAndText(image : UIImage, text : String){
+    public func configureImageAndText(image : UIImage, text : String){
         textLabel.text = text
         imageView.image = image
     }
